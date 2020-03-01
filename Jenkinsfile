@@ -1,7 +1,7 @@
 pipeline {
    agent any
    environment {
-       registry = "eromsu/cicd-k8s"
+       registry = "eromski/cicd-k8s"
        GOCACHE = "/tmp"
    }
    stages {
