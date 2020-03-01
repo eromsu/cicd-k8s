@@ -1,0 +1,11 @@
+- hosts: localhost
+  become: yes
+  vars:
+    jenkins_hostname: 192.168.0.187
+    docker_users:
+    - jenkins
+  roles:
+    - role: geerlingguy.jenkins
+    - role: geerlingguy.docker
+### Run the playbook through the following command: ansible-playbook jenkins-docker-install-playbook.yml . Notice that we’re using the public IP address of the instance as the hostname that Jenkins will use ###
+### Ensure port 8080 is open
