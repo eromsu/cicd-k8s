@@ -1,4 +1,5 @@
-- hosts: localhost
+#- hosts: localhost - Changing k8s loc
+- hosts: kubeserver
   tasks:
   - name: Deploy the service
     k8s:
